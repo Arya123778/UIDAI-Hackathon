@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_biometric_1500000_1861108.csv
+============================================================
+
+Dataset Shape: (361108, 6)
+
+First 10 Rows:
+         date          state       district  pincode  bio_age_5_17  bio_age_17_
+0  08-12-2025  Uttar Pradesh      Moradabad   244411             4            2
+1  08-12-2025  Uttar Pradesh      Moradabad   244601            14           19
+2  08-12-2025  Uttar Pradesh  Muzaffarnagar   251002            22           37
+3  08-12-2025  Uttar Pradesh  Muzaffarnagar   251202             4            4
+4  08-12-2025  Uttar Pradesh  Muzaffarnagar   251319             4            7
+5  08-12-2025  Uttar Pradesh       Pilibhit   262001           116           94
+6  08-12-2025  Uttar Pradesh       Pilibhit   262121            13           15
+7  08-12-2025  Uttar Pradesh       Pilibhit   262124             6            9
+8  08-12-2025  Uttar Pradesh     Pratapgarh   229408             1            3
+9  08-12-2025  Uttar Pradesh     Pratapgarh   230001             7            8
+
+Data Types:
+date            object
+state           object
+district        object
+pincode          int64
+bio_age_5_17     int64
+bio_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date            0
+state           0
+district        0
+pincode         0
+bio_age_5_17    0
+bio_age_17_     0
+dtype: int64
+
+Unique States: 53
+Unique Districts: 943
+Unique Pincodes: 19517
+
+Total Bio Age 5-17: 2962219
+Total Bio Age 17+: 2664063
+
+Summary Statistics for Numeric Columns:
+             pincode   bio_age_5_17    bio_age_17_
+count  361108.000000  361108.000000  361108.000000
+mean   522148.027720       8.203139       7.377469
+std    196163.123982      16.473975      12.690448
+min    110001.000000       0.000000       0.000000
+25%    393030.000000       1.000000       1.000000
+50%    522657.000000       3.000000       3.000000
+75%    683548.250000       9.000000       8.000000
+max    855456.000000     723.000000     383.000000
+
+Additional Insights:
+pincode - Min: 110001, Max: 855456, Mean: 522148.03
+bio_age_5_17 - Min: 0, Max: 723, Mean: 8.20
+bio_age_17_ - Min: 0, Max: 383, Mean: 7.38
+
+Number of Duplicate Rows: 21306
+
+Date Range:
+Earliest Date: 2025-08-12 00:00:00
+Latest Date: 2025-12-12 00:00:00
+Number of Unique Dates: 5
+

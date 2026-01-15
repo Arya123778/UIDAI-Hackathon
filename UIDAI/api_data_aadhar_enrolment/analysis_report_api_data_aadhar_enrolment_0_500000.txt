@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_enrolment_0_500000.csv
+============================================================
+
+Dataset Shape: (500000, 7)
+
+First 10 Rows:
+         date          state          district  pincode  age_0_5  age_5_17  age_18_greater
+0  02-03-2025      Meghalaya  East Khasi Hills   793121       11        61              37
+1  09-03-2025      Karnataka   Bengaluru Urban   560043       14        33              39
+2  09-03-2025  Uttar Pradesh      Kanpur Nagar   208001       29        82              12
+3  09-03-2025  Uttar Pradesh           Aligarh   202133       62        29              15
+4  09-03-2025      Karnataka   Bengaluru Urban   560016       14        16              21
+5  09-03-2025          Bihar         Sitamarhi   843331       20        49              12
+6  09-03-2025          Bihar         Sitamarhi   843330       23        24              42
+7  09-03-2025  Uttar Pradesh          Bahraich   271865       26        60              14
+8  09-03-2025  Uttar Pradesh         Firozabad   283204       28        26              10
+9  09-03-2025          Bihar   Purbi Champaran   845418       30        48              10
+
+Data Types:
+date              object
+state             object
+district          object
+pincode            int64
+age_0_5            int64
+age_5_17           int64
+age_18_greater     int64
+dtype: object
+
+Missing Values per Column:
+date              0
+state             0
+district          0
+pincode           0
+age_0_5           0
+age_5_17          0
+age_18_greater    0
+dtype: int64
+
+Unique States: 54
+Unique Districts: 971
+Unique Pincodes: 19302
+
+Summary Statistics for Numeric Columns:
+             pincode        age_0_5       age_5_17  age_18_greater
+count  500000.000000  500000.000000  500000.000000   500000.000000
+mean   519204.051054       4.040812       2.315682        0.245558
+std    206793.322085      24.417921      20.191196        4.438557
+min    100000.000000       0.000000       0.000000        0.000000
+25%    362229.000000       1.000000       0.000000        0.000000
+50%    517131.000000       2.000000       0.000000        0.000000
+75%    712139.000000       3.000000       1.000000        0.000000
+max    855456.000000    2688.000000    1812.000000      855.000000
+
+Additional Insights:
+pincode - Min: 100000, Max: 855456, Mean: 519204.05
+age_0_5 - Min: 0, Max: 2688, Mean: 4.04
+age_5_17 - Min: 0, Max: 1812, Mean: 2.32
+age_18_greater - Min: 0, Max: 855, Mean: 0.25
+
+Number of Duplicate Rows: 6036
+
+Date Range:
+Earliest Date: 2025-01-04 00:00:00
+Latest Date: 2025-12-09 00:00:00
+Number of Unique Dates: 18
+

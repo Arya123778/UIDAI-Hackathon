@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_demographic_1500000_2000000.csv
+============================================================
+
+Dataset Shape: (500000, 6)
+
+First 10 Rows:
+         date      state district  pincode  demo_age_5_17  demo_age_17_
+0  18-11-2025  Karnataka    Hasan   573118              0             2
+1  18-11-2025  Karnataka    Hasan   573124              1             3
+2  18-11-2025  Karnataka    Hasan   573150              0             2
+3  18-11-2025  Karnataka   Hassan   573113              0             1
+4  18-11-2025  Karnataka   Hassan   573120              1             4
+5  18-11-2025  Karnataka   Hassan   573121              1             2
+6  18-11-2025  Karnataka   Hassan   573124              0             3
+7  18-11-2025  Karnataka   Hassan   573129              0             3
+8  18-11-2025  Karnataka   Hassan   573150              0             0
+9  18-11-2025  Karnataka   Hassan   573165              0             1
+
+Data Types:
+date             object
+state            object
+district         object
+pincode           int64
+demo_age_5_17     int64
+demo_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date             0
+state            0
+district         0
+pincode          0
+demo_age_5_17    0
+demo_age_17_     0
+dtype: int64
+
+Unique States: 59
+Unique Districts: 964
+Unique Pincodes: 19607
+
+Total Demo Age 5-17: 1169280
+Total Demo Age 17+: 10660899
+
+Summary Statistics for Numeric Columns:
+             pincode  demo_age_5_17   demo_age_17_
+count  500000.000000  500000.000000  500000.000000
+mean   526371.449018       2.338560      21.321798
+std    196934.104651      13.735643     120.175774
+min    110001.000000       0.000000       0.000000
+25%    396193.000000       0.000000       2.000000
+50%    524152.000000       1.000000       6.000000
+75%    691015.000000       2.000000      15.000000
+max    855456.000000    1196.000000   16166.000000
+
+Additional Insights:
+pincode - Min: 110001, Max: 855456, Mean: 526371.45
+demo_age_5_17 - Min: 0, Max: 1196, Mean: 2.34
+demo_age_17_ - Min: 0, Max: 16166, Mean: 21.32
+
+Number of Duplicate Rows: 0
+
+Date Range:
+Earliest Date: 2025-03-01 00:00:00
+Latest Date: 2025-12-29 00:00:00
+Number of Unique Dates: 94
+

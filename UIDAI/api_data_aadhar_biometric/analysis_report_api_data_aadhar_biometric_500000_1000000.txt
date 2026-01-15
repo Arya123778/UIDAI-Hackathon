@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_biometric_500000_1000000.csv
+============================================================
+
+Dataset Shape: (500000, 6)
+
+First 10 Rows:
+         date state   district  pincode  bio_age_5_17  bio_age_17_
+0  19-09-2025   Goa  North Goa   403502             0            4
+1  19-09-2025   Goa  North Goa   403508             1            4
+2  19-09-2025   Goa  North Goa   403513             2            0
+3  19-09-2025   Goa  North Goa   403527             2            2
+4  19-09-2025   Goa  South Goa   403601             7            3
+5  19-09-2025   Goa  South Goa   403602             2            3
+6  19-09-2025   Goa  South Goa   403703             2           11
+7  19-09-2025   Goa  South Goa   403705             6            4
+8  19-09-2025   Goa  South Goa   403708             0            2
+9  19-09-2025   Goa  South Goa   403709             1            0
+
+Data Types:
+date            object
+state           object
+district        object
+pincode          int64
+bio_age_5_17     int64
+bio_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date            0
+state           0
+district        0
+pincode         0
+bio_age_5_17    0
+bio_age_17_     0
+dtype: int64
+
+Unique States: 53
+Unique Districts: 947
+Unique Pincodes: 19536
+
+Total Bio Age 5-17: 3657926
+Total Bio Age 17+: 3765129
+
+Summary Statistics for Numeric Columns:
+             pincode   bio_age_5_17    bio_age_17_
+count  500000.000000  500000.000000  500000.000000
+mean   521530.811858       7.315852       7.530258
+std    198388.564260      13.580852      14.156381
+min    110001.000000       0.000000       0.000000
+25%    392220.000000       1.000000       1.000000
+50%    522016.000000       3.000000       3.000000
+75%    686583.000000       8.000000       8.000000
+max    855456.000000     829.000000     577.000000
+
+Additional Insights:
+pincode - Min: 110001, Max: 855456, Mean: 521530.81
+bio_age_5_17 - Min: 0, Max: 829, Mean: 7.32
+bio_age_17_ - Min: 0, Max: 577, Mean: 7.53
+
+Number of Duplicate Rows: 31222
+
+Date Range:
+Earliest Date: 2025-09-19 00:00:00
+Latest Date: 2025-11-07 00:00:00
+Number of Unique Dates: 27
+

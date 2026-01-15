@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_biometric_1000000_1500000.csv
+============================================================
+
+Dataset Shape: (500000, 6)
+
+First 10 Rows:
+         date             state      district  pincode  bio_age_5_17  bio_age_17_
+0  07-11-2025           Haryana  Yamuna Nagar   135002             4            6
+1  07-11-2025           Haryana   Yamunanagar   135001             1            2
+2  07-11-2025  Himachal Pradesh      Bilaspur   174004             2            2
+3  07-11-2025  Himachal Pradesh      Bilaspur   174005             1            0
+4  07-11-2025  Himachal Pradesh      Bilaspur   174013             3            1
+5  07-11-2025  Himachal Pradesh      Bilaspur   174021            21            4
+6  07-11-2025  Himachal Pradesh      Bilaspur   174024             0            1
+7  07-11-2025  Himachal Pradesh      Bilaspur   174027             2            3
+8  07-11-2025  Himachal Pradesh      Bilaspur   174029            12            5
+9  07-11-2025  Himachal Pradesh      Bilaspur   174031             1            1
+
+Data Types:
+date            object
+state           object
+district        object
+pincode          int64
+bio_age_5_17     int64
+bio_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date            0
+state           0
+district        0
+pincode         0
+bio_age_5_17    0
+bio_age_17_     0
+dtype: int64
+
+Unique States: 55
+Unique Districts: 950
+Unique Pincodes: 19555
+
+Total Bio Age 5-17: 4111011
+Total Bio Age 17+: 3875758
+
+Summary Statistics for Numeric Columns:
+             pincode   bio_age_5_17    bio_age_17_
+count  500000.000000  500000.000000  500000.000000
+mean   520925.071276       8.222022       7.751516
+std    198445.752368      15.389444      13.592242
+min    110001.000000       0.000000       0.000000
+25%    390018.000000       1.000000       1.000000
+50%    522409.000000       3.000000       4.000000
+75%    686564.000000       9.000000       9.000000
+max    855456.000000     743.000000     549.000000
+
+Additional Insights:
+pincode - Min: 110001, Max: 855456, Mean: 520925.07
+bio_age_5_17 - Min: 0, Max: 743, Mean: 8.22
+bio_age_17_ - Min: 0, Max: 549, Mean: 7.75
+
+Number of Duplicate Rows: 30585
+
+Date Range:
+Earliest Date: 2025-01-12 00:00:00
+Latest Date: 2025-12-11 00:00:00
+Number of Unique Dates: 14
+

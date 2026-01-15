@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_enrolment_500000_1000000.csv
+============================================================
+
+Dataset Shape: (500000, 7)
+
+First 10 Rows:
+         date           state  district  pincode  age_0_5  age_5_17  age_18_greater
+0  26-10-2025  Andhra Pradesh  Nalgonda   508004        0         1               0
+1  26-10-2025  Andhra Pradesh  Nalgonda   508238        1         0               0
+2  26-10-2025  Andhra Pradesh  Nalgonda   508278        1         0               0
+3  26-10-2025  Andhra Pradesh   Nandyal   518432        0         1               0
+4  26-10-2025  Andhra Pradesh   Nandyal   518543        1         0               0
+5  26-10-2025  Andhra Pradesh   Nellore   524003        0         1               0
+6  26-10-2025  Andhra Pradesh   Nellore   524129        2         0               0
+7  26-10-2025  Andhra Pradesh   Nellore   524132        3         0               0
+8  26-10-2025  Andhra Pradesh   Nellore   524230        1         0               0
+9  26-10-2025  Andhra Pradesh   Nellore   524302        1         0               0
+
+Data Types:
+date              object
+state             object
+district          object
+pincode            int64
+age_0_5            int64
+age_5_17           int64
+age_18_greater     int64
+dtype: object
+
+Missing Values per Column:
+date              0
+state             0
+district          0
+pincode           0
+age_0_5           0
+age_5_17          0
+age_18_greater    0
+dtype: int64
+
+Unique States: 52
+Unique Districts: 941
+Unique Pincodes: 19338
+
+Summary Statistics for Numeric Columns:
+             pincode        age_0_5       age_5_17  age_18_greater
+count  500000.000000  500000.000000  500000.000000   500000.000000
+mean   518077.362504       3.009628       1.082962        0.089984
+std    204615.861812       4.658289       2.537596        1.073745
+min    100000.000000       0.000000       0.000000        0.000000
+25%    365541.000000       1.000000       0.000000        0.000000
+50%    517583.000000       2.000000       0.000000        0.000000
+75%    695023.000000       3.000000       1.000000        0.000000
+max    855456.000000     210.000000      97.000000      318.000000
+
+Additional Insights:
+pincode - Min: 100000, Max: 855456, Mean: 518077.36
+age_0_5 - Min: 0, Max: 210, Mean: 3.01
+age_5_17 - Min: 0, Max: 97, Mean: 1.08
+age_18_greater - Min: 0, Max: 318, Mean: 0.09
+
+Number of Duplicate Rows: 15804
+
+Date Range:
+Earliest Date: 2025-10-26 00:00:00
+Latest Date: 2025-12-31 00:00:00
+Number of Unique Dates: 37
+

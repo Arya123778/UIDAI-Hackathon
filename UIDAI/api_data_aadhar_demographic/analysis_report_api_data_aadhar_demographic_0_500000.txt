@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_demographic_0_500000.csv
+============================================================
+
+Dataset Shape: (500000, 6)
+
+First 10 Rows:
+         date           state           district  pincode  demo_age_5_17  demo_age_17_
+0  01-03-2025   Uttar Pradesh          Gorakhpur   273213             49           529
+1  01-03-2025  Andhra Pradesh           Chittoor   517132             22           375
+2  01-03-2025         Gujarat             Rajkot   360006             65           765
+3  01-03-2025  Andhra Pradesh         Srikakulam   532484             24           314
+4  01-03-2025       Rajasthan            Udaipur   313801             45           785
+5  01-03-2025       Rajasthan              Sikar   332028             28           285
+6  01-03-2025       Karnataka           Tumakuru   572201             88           332
+7  01-03-2025   Uttar Pradesh          Gorakhpur   273211             61           836
+8  01-03-2025  Andhra Pradesh            Kurnool   518313             83           986
+9  01-03-2025     West Bengal  Paschim Medinipur   721148             13           281
+
+Data Types:
+date             object
+state            object
+district         object
+pincode           int64
+demo_age_5_17     int64
+demo_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date             0
+state            0
+district         0
+pincode          0
+demo_age_5_17    0
+demo_age_17_     0
+dtype: int64
+
+Unique States: 58
+Unique Districts: 956
+Unique Pincodes: 19607
+
+Total Demo Age 5-17: 1437933
+Total Demo Age 17+: 12857093
+
+Summary Statistics for Numeric Columns:
+             pincode  demo_age_5_17   demo_age_17_
+count  500000.000000  500000.000000  500000.000000
+mean   529213.514372       2.875866      25.714186
+std    197602.642764      19.741769     158.938263
+min    110001.000000       0.000000       0.000000
+25%    400019.000000       0.000000       2.000000
+50%    531031.000000       1.000000       6.000000
+75%    700083.000000       2.000000      16.000000
+max    855456.000000    2690.000000   15090.000000
+
+Additional Insights:
+pincode - Min: 110001, Max: 855456, Mean: 529213.51
+demo_age_5_17 - Min: 0, Max: 2690, Mean: 2.88
+demo_age_17_ - Min: 0, Max: 15090, Mean: 25.71
+
+Number of Duplicate Rows: 81207
+
+Date Range:
+Earliest Date: 2025-01-03 00:00:00
+Latest Date: 2025-12-12 00:00:00
+Number of Unique Dates: 41
+

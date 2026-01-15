@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_demographic_500000_1000000.csv
+============================================================
+
+Dataset Shape: (500000, 6)
+
+First 10 Rows:
+         date        state    district  pincode  demo_age_5_17  demo_age_17_
+0  19-09-2025  Maharashtra      Satara   415517              0             2
+1  19-09-2025  Maharashtra      Satara   415518              0             2
+2  19-09-2025  Maharashtra      Satara   415520              0             3
+3  19-09-2025  Maharashtra      Satara   415539              1             5
+4  19-09-2025  Maharashtra  Sindhudurg   416510              4            37
+5  19-09-2025  Maharashtra  Sindhudurg   416514              0             2
+6  19-09-2025  Maharashtra  Sindhudurg   416523              0             1
+7  19-09-2025  Maharashtra  Sindhudurg   416604              0             1
+8  19-09-2025  Maharashtra  Sindhudurg   416608              0             1
+9  19-09-2025  Maharashtra  Sindhudurg   416611              0             2
+
+Data Types:
+date             object
+state            object
+district         object
+pincode           int64
+demo_age_5_17     int64
+demo_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date             0
+state            0
+district         0
+pincode          0
+demo_age_5_17    0
+demo_age_17_     0
+dtype: int64
+
+Unique States: 61
+Unique Districts: 965
+Unique Pincodes: 19613
+
+Total Demo Age 5-17: 1086839
+Total Demo Age 17+: 10112644
+
+Summary Statistics for Numeric Columns:
+             pincode  demo_age_5_17   demo_age_17_
+count  500000.000000  500000.000000  500000.000000
+mean   526120.051742       2.173678      20.225288
+std    198635.343584      12.194431     110.928146
+min    100000.000000       0.000000       0.000000
+25%    394327.000000       0.000000       2.000000
+50%    524227.000000       1.000000       6.000000
+75%    695309.000000       2.000000      15.000000
+max    855456.000000    1084.000000   16166.000000
+
+Additional Insights:
+pincode - Min: 100000, Max: 855456, Mean: 526120.05
+demo_age_5_17 - Min: 0, Max: 1084, Mean: 2.17
+demo_age_17_ - Min: 0, Max: 16166, Mean: 20.23
+
+Number of Duplicate Rows: 0
+
+Date Range:
+Earliest Date: 2025-03-01 00:00:00
+Latest Date: 2025-12-29 00:00:00
+Number of Unique Dates: 93
+

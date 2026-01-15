@@ -1,0 +1,66 @@
+Dataset Analysis Report for api_data_aadhar_demographic_2000000_2071700.csv
+============================================================
+
+Dataset Shape: (71700, 6)
+
+First 10 Rows:
+         date           state  district  pincode  demo_age_5_17  demo_age_17_
+0  16-12-2025  Madhya Pradesh  Shajapur   465113              0             4
+1  16-12-2025  Madhya Pradesh  Shajapur   465226              2            14
+2  16-12-2025  Madhya Pradesh  Shajapur   465339              1             2
+3  16-12-2025  Madhya Pradesh  Shajapur   465447              1            19
+4  16-12-2025  Madhya Pradesh   Sheopur   476332             11            25
+5  16-12-2025  Madhya Pradesh   Sheopur   476335              8            34
+6  16-12-2025  Madhya Pradesh   Sheopur   476337              7            77
+7  16-12-2025  Madhya Pradesh   Sheopur   476339              8            53
+8  16-12-2025  Madhya Pradesh  Shivpuri   473585              3            17
+9  16-12-2025  Madhya Pradesh  Shivpuri   473670              8            39
+
+Data Types:
+date             object
+state            object
+district         object
+pincode           int64
+demo_age_5_17     int64
+demo_age_17_      int64
+dtype: object
+
+Missing Values per Column:
+date             0
+state            0
+district         0
+pincode          0
+demo_age_5_17    0
+demo_age_17_     0
+dtype: int64
+
+Unique States: 57
+Unique Districts: 927
+Unique Pincodes: 18506
+
+Total Demo Age 5-17: 95052
+Total Demo Age 17+: 885701
+
+Summary Statistics for Numeric Columns:
+             pincode  demo_age_5_17  demo_age_17_
+count   71700.000000   71700.000000  71700.000000
+mean   527997.486471       1.325690     12.352873
+std    194340.288150       2.389325     21.910108
+min    100000.000000       0.000000      0.000000
+25%    401102.000000       0.000000      2.000000
+50%    522005.500000       0.000000      5.000000
+75%    700052.000000       2.000000     14.000000
+max    855456.000000      52.000000   1608.000000
+
+Additional Insights:
+pincode - Min: 100000, Max: 855456, Mean: 527997.49
+demo_age_5_17 - Min: 0, Max: 52, Mean: 1.33
+demo_age_17_ - Min: 0, Max: 1608, Mean: 12.35
+
+Number of Duplicate Rows: 0
+
+Date Range:
+Earliest Date: 2025-11-25 00:00:00
+Latest Date: 2025-12-29 00:00:00
+Number of Unique Dates: 18
+

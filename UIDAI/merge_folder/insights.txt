@@ -1,0 +1,19 @@
+Insights from Aadhaar Data Analysis:
+
+1. Districts with Highest Enrolment:
+   South 24 Parganas: 17031 enrolments
+   Murshidabad: 15029 enrolments
+   Pune: 13929 enrolments
+   Thane: 13765 enrolments
+   North 24 Parganas: 12776 enrolments
+
+2. Districts with Lowest Enrolment:
+   ANGUL: 1 enrolments
+   Bagpat: 1 enrolments
+   Balotra: 1 enrolments
+   Bandipur: 1 enrolments
+   Bardez: 1 enrolments
+
+3. Age Group with Most Updates: demo_age_17_
+
+4. States with Missing Biometric Data: BALANAGAR, Jaipur, Madanapalle, West Bengli, west Bengal
